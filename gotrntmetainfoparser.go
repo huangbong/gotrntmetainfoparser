@@ -45,11 +45,6 @@ type MetaInfo struct {
 
 // Open .torrent file, un-bencode it and load them into MetaInfo struct.
 func (metaInfo *MetaInfo) ReadTorrentMetaInfoFile(fileNameWithPath string) bool {
-	// Check exntension.
-	if fileExt := filepath.Ext(fileNameWithPath); fileExt != ".torrent" {
-		return false
-	}
-
 	// Open file now.
 	file, er := os.Open(fileNameWithPath)
 	if er != nil {
