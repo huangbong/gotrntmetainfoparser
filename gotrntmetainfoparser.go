@@ -6,7 +6,6 @@ import (
 	"crypto/sha1"
 	"fmt"
 	"os"
-	"path/filepath"
 	"time"
 )
 
